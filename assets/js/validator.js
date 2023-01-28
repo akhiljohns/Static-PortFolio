@@ -69,6 +69,6 @@ fname: {
         error: function (err) {
           alert("Something Error");
         },
-      });
+      }); 
     }
   
