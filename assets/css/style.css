@@ -1493,3 +1493,25 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+/* Style for the tooltip */
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  visibility: hidden; /* Initially hide the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+  bottom: 100%; /* Position it above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Style for the link container (a) when hovering */
+a:hover .tooltip {
+  visibility: visible; /* Show the tooltip on hover */
+  opacity: 1;
+}
